@@ -13,5 +13,4 @@ gulp.task('js', function() {
 		.pipe(source('bundle.js'))
 		.pipe(gulp.dest('./public/build/js'))
 });
-
-// gulp.task('default', [ 'browserify' ]);
+gulp.task('default', [ 'js' ]);
