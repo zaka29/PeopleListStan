@@ -4,11 +4,20 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "axios": "^0.12.0",
     "ajax-promises": "^1.0.2",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
     "bootstrap": "^3.3.7",
     "browserify": "^14.4.0",
     "express": "3.x",
+    "gulp-babel": "^6.1.2",
     "gulp-util": "^3.0.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
