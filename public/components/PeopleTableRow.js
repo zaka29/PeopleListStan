@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PeopleCell from './PeopleTableCell.js'
 
-export const PeopleRow = ({ person, richestPerson, skills, interests }) => (
+const PeopleRow = ({ person, richestPerson, skills, interests }) => (
   
-	<tr className={ person.id == richestPerson ? 'richest' : ''}>
+	<tr className={ person.id == richestPerson ? 'info' : ''}>
 
 		<PeopleCell> {person.name} </PeopleCell>
         <PeopleCell> {person.org} </PeopleCell> 
@@ -12,7 +12,7 @@ export const PeopleRow = ({ person, richestPerson, skills, interests }) => (
                 if (person.id !== skill.personId) {
                     return null
                 }
-                return <span key={i}>{ skill.name }</span>
+                return <span className="label label-default" key={i}>{ skill.name } </span>
             })}
         </PeopleCell>
         <PeopleCell>
@@ -20,9 +20,11 @@ export const PeopleRow = ({ person, richestPerson, skills, interests }) => (
                 if (person.id !== interest.personId) {
                     return null
                 }
-                return <span key={i}>{ interest.name }</span>
+                return <span className="label label-primary" key={i}>{ interest.name } </span>
             })}
         </PeopleCell>
 
 	</tr>
-)
+);
+
+export default PeopleRow;
