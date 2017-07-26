@@ -12,7 +12,7 @@ const PeopleRow = ({ person, richestPerson, skills, interests }) => (
                 if (person.id !== skill.personId) {
                     return null
                 }
-                return <span key={i}>{ skill.name }</span>
+                return <span className="label label-default" key={i}>{ skill.name } </span>
             })}
         </PeopleCell>
         <PeopleCell>
@@ -20,7 +20,7 @@ const PeopleRow = ({ person, richestPerson, skills, interests }) => (
                 if (person.id !== interest.personId) {
                     return null
                 }
-                return <span key={i}>{ interest.name }</span>
+                return <span className="label label-primary" key={i}>{ interest.name } </span>
             })}
         </PeopleCell>
 
