@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PeopleCell from './PeopleTableCell.js'
 
-export const PeopleRow = ({ person, richestPerson, skills, interests }) => (
+const PeopleRow = ({ person, richestPerson, skills, interests }) => (
   
-	<tr className={ person.id == richestPerson ? 'richest' : ''}>
+	<tr className={ person.id == richestPerson ? 'info' : ''}>
 
 		<PeopleCell> {person.name} </PeopleCell>
         <PeopleCell> {person.org} </PeopleCell> 
@@ -25,4 +25,6 @@ export const PeopleRow = ({ person, richestPerson, skills, interests }) => (
         </PeopleCell>
 
 	</tr>
-)
+);
+
+export default PeopleRow;
