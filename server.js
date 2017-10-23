@@ -1,7 +1,3 @@
-// 
-// Quick-n-dirty Example API Server for Skedulo intervew questions
-//
-
 // Imports
 var express = require('express');
 var url     = require('url');
